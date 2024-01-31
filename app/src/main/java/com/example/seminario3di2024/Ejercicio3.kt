@@ -26,7 +26,7 @@ class Ejercicio3 : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                this.start() // Restart the countdown
+                this.start()
             }
         }
         countDownTimer.start()

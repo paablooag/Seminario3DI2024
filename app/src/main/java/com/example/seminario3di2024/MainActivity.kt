@@ -12,13 +12,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val textView = findViewById<TextView>(R.id.temporizador)
-        val countDownTimer = object : CountDownTimer(1000, 1000) {
+        val countDownTimer = object : CountDownTimer(10000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 textView.text = (millisUntilFinished / 1000).toString()
             }
 
             override fun onFinish() {
-                var newIntent = Intent(this@MainActivity, Ejercicio3::class.java)
+                var newIntent = Intent(this@MainActivity, Ejercicio2::class.java)
                 startActivity(newIntent)
             }
         }
